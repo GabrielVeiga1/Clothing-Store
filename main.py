@@ -31,8 +31,8 @@ def adicionar_ao_carrinho(carrinho, produtos):
     escolha = int(input("\nEscolha o número do produto que deseja adicionar ao carrinho: "))
     if escolha >= 1 and escolha <= len(produtos):
         carrinho.append(produtos[escolha - 1])
-        print(centralizar("\n" + Fore.GREEN + " "*24+ "Produto adicionado ao carrinho!" + Style.RESET_ALL))
-        
+        print(centralizar("\n" + Fore.GREEN + " "*18+ "Produto adicionado ao carrinho!" + Style.RESET_ALL))
+
     else:
         print(centralizar(Fore.RED + "Escolha inválida." + Style.RESET_ALL))
 
@@ -61,7 +61,9 @@ def main():
     produtos = [
         Produto("Camiseta", 29.99),
         Produto("Calça jeans", 49.99),
-        Produto("Tênis", 79.99)
+        Produto("Tênis", 79.99),
+        Produto("Boné", 40.50),
+        Produto("Par de Meias", 15.50)
     ]
 
     carrinho = []
