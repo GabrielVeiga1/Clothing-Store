@@ -1,4 +1,5 @@
 from colorama import Fore, Style
+
 import os
 
 # Função para limpar a tela do terminal
