@@ -21,7 +21,7 @@ class Produto:
 # Função para exibir os produtos disponíveis
 def exibir_produtos(produtos):
     clear_screen()
-    print("\n" + centralizar(Fore.GREEN + " "*6 + "Produtos disponíveis:" + Style.RESET_ALL) + "\n") # Ajuste de posicionamento aqui
+    print("\n" + centralizar(Fore.GREEN + " "*6 + "Produtos disponíveis:" + Style.RESET_ALL) + "\n")
     for i, produto in enumerate(produtos, 1):
         print(f"{i}. {produto.nome} - {Fore.YELLOW}R${produto.preco:.2f}{Style.RESET_ALL}")
 
@@ -72,7 +72,7 @@ def main():
     # Loop principal do programa
     while True:
         clear_screen()
-        print("\n" + centralizar(Fore.BLUE + " "*8 + "Bem-vindo à Loja Virtual!" + Style.RESET_ALL) + "\n") # Ajuste de posicionamento aqui
+        print("\n" + centralizar(Fore.BLUE + " "*8 + "Bem-vindo à Loja Virtual!" + Style.RESET_ALL) + "\n")
         print(centralizar("Opções:"))
         print(centralizar("1. Ver produtos disponíveis"))
         print(centralizar("2. Adicionar produto ao carrinho"))
